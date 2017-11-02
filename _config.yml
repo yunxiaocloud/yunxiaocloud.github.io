@@ -1,66 +1,66 @@
-# Resources settings
-source:      .
-layouts:     ./_layouts
-timezone:    Asia/Hongkong
+# Site settings 配置站点
+title: '廖柯宇的独立博客'
+description: '昵称悟空，千禧一代，前端开发者/伪极客/灵魂摄影师，热爱技术&设计。很高兴能在这里与你分享我对技术和生活的思考。'
+keyword: '廖柯宇, 廖柯宇的独立博客, 廖柯宇的博客, 前端, 前端开发, 前端博客, javascript, vuejs, nodejs, 设计'
+url: 'http://liaokeyu.com' # your host
 
-# Site settings
-email: 1540294142@qq.com
-author: 薛晶锦
-owner_name: Joytou Wu
-github_username: joytou
-repo: JOYTOU
+# if you don't need baseurl, you should leave this value blank.
+baseurl: ''
 
-#Server
-url: http://joytou.nets.hk
-github: https://github.com/joytou/
-coding: https://coding.net/joytou/
-baseurl: ""
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
 
-#Page settings
-future: true
-show_drafts: nil
-lsi: true
-published: false
-safe: false
-permalink: /:year/:month/:day/:title/
+# Author 配置博主信息
+author: '廖柯宇'
+nickname: '悟空'
+bio: '前端开发者，热爱技术&设计，简单乐观爱创造'
+avatar: '/assets/img/profile.png'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true
+
+# Comments
+disqus: false
+disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# SNS settings 配置社交网站url: weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
+sns:
+  weibo: '//weibo.com/lovecolcol'
+  juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
+  instagram: '//www.instagram.com/steveliaocn'
+  github: '//github.com/kaeyleo'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings
+paginate: 6
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
 markdown: kramdown
-excerpt_separator: '<!-- more -->'
+highlighter: rouge
+kramdown:
+  input: GFM
 
-exclude: ['README.md','Manifest.md']
-include: ['robots.txt']
+RSS: false
 
-# Description
-description: "只为博客而生，也因为博客而存在。Not only for the existence of the blog, but also because of the existence of the blog."
-# Keywords
-keywords:
-        - "github"
-        - "bootstrap"
-        - "blog"
-        - "joytou"
-        - "markdown"
-        - "jekyll"
-        - "博客"
-        - "个人博客"
-        - "博客模板"
-        
-#Update configuration
-versioncode: 1
-        #The current versioncode.
-versionname: "1.0.1"
-        #The current versionname.
-remind: true
-        #Whether to remind you to upgrade the latest version when there is the latest version.
-
-#Others
-#Baidu
-BaiduSiteVerification: "eb6Z6IT34b"
-#51La
-51la: "19258191"
-51lamb: "1"
-
-coding_comments:
-  owner: 'wusisu'
-  repo: 'wusisu'
-  oauth:
-    client_id: '624713aab28c44e0555b0e8d5d18dece'
-    client_secret: '5d2d45460648bfbd3b9f77bead1a0ac6aa7c3c95'
+# Plugins
+gems: [jekyll-paginate]
